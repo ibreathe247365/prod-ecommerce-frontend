@@ -27,7 +27,7 @@ const nextConfig = withStoreConfig({
       },
       {
         protocol: "https",
-        hostname: "medusa-tutorial-bucket.nyc3.digitaloceanspaces.com",
+        hostname: "baby-commerce-space.nyc3.digitaloceanspaces.com",
       },
     ],
   },
