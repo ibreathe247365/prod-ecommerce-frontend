@@ -34,6 +34,7 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        'ui-fg-base': 'var(--color-ui-fg-base)',
       },
       borderRadius: {
         none: "0px",
@@ -156,6 +157,9 @@ module.exports = {
         "slide-in": "slide-in 1.2s cubic-bezier(.41,.73,.51,1.02)",
         leave: "leave 150ms ease-in forwards",
       },
+      backgroundImage: {
+        'navbar-gradient': 'linear-gradient(to right, var(--color-navbar-start), var(--color-navbar-end))',
+      }
     },
   },
   plugins: [require("tailwindcss-radix")()],
