@@ -4,6 +4,9 @@ import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import { SearchIcon } from "@modules/common/icons/search"
+import { BagIcon } from "@modules/common/icons/bag"
+import { UserIcon } from "@modules/common/icons/profile"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
@@ -24,7 +27,7 @@ export default async function Nav() {
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              Babies Ecommerce Store
+              Babies
             </LocalizedClientLink>
           </div>
 
@@ -37,7 +40,7 @@ export default async function Nav() {
                   scroll={false}
                   data-testid="nav-search-link"
                 >
-                  Search
+                  <SearchIcon />
                 </LocalizedClientLink>
               )}
               <LocalizedClientLink
@@ -45,7 +48,7 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                Account
+                  <UserIcon />
               </LocalizedClientLink>
             </div>
             <Suspense
@@ -55,7 +58,7 @@ export default async function Nav() {
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
-                  Cart (0)
+                  <BagIcon />
                 </LocalizedClientLink>
               }
             >
