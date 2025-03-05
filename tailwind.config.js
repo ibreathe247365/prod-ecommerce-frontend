@@ -72,6 +72,7 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
+        fredoka: ["Fredoka", "sans-serif"],
       },
       keyframes: {
         ring: {

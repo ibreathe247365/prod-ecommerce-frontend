@@ -26,13 +26,13 @@ export default async function Nav() {
 
           {/* Ellipse with Babies text */}
           <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-12 py-2 rounded-[50%_/_50%]">
-            <LocalizedClientLink
-              href="/"
-              className="txt-xlarge-plus font-semibold text-blue-600 hover:text-blue-800"
-              data-testid="nav-store-link"
-            >
-              babies
-            </LocalizedClientLink>
+          <LocalizedClientLink
+            href="/"
+            className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-400 font-[Fredoka] tracking-wider rotate-[-2deg]"
+            data-testid="nav-store-link"
+          >
+            babies
+          </LocalizedClientLink>
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
