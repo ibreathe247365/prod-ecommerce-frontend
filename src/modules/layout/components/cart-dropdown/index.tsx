@@ -87,7 +87,7 @@ const CartDropdown = ({
             <BagIcon />
           </LocalizedClientLink>
           {totalItems > 0 && (
-            <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+            <span className="absolute top-0 right-0 transform translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
               {totalItems}
             </span>
           )}
