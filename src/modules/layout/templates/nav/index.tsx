@@ -28,7 +28,7 @@ export default async function Nav() {
           <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-12 py-2 rounded-[50%_/_50%]">
             <LocalizedClientLink
               href="/"
-              className="txt-xlarge text-blue-600 hover:text-blue-800"
+              className="txt-xlarge-plus font-semibold text-blue-600 hover:text-blue-800"
               data-testid="nav-store-link"
             >
               babies
@@ -84,6 +84,7 @@ export default async function Nav() {
           </div>
         </div>
       </header>
+      <div className="mt-6"></div>
     </div>
   )
 }
