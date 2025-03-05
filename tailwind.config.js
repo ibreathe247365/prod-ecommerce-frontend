@@ -35,6 +35,8 @@ module.exports = {
           90: "#111827",
         },
         'ui-fg-base': 'var(--color-ui-fg-base)',
+        'navbar-start': 'var(--color-navbar-start)',
+        'navbar-end': 'var(--color-navbar-end)',
       },
       borderRadius: {
         none: "0px",
