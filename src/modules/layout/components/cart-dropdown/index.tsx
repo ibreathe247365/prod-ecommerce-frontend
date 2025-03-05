@@ -78,7 +78,7 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full">
+        <Popover.Button className="h-10">
           <LocalizedClientLink
             className="hover:text-ui-fg-base"
             href="/cart"
@@ -87,7 +87,7 @@ const CartDropdown = ({
             <BagIcon />
           </LocalizedClientLink>
           {totalItems > 0 && (
-            <span className="absolute -top-1 right-0 transform translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+            <span className="absolute top-0 right-0 transform translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
               {totalItems}
             </span>
           )}
