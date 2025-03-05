@@ -25,10 +25,10 @@ export default async function Nav() {
           </div>
 
           {/* Ellipse with Babies text */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-12 py-1 rounded-full border border-gray-300">
+          <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-12 py-2 rounded-[50%_/_50%]">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus text-blue-800 hover:text-blue-900"
+              className="txt-xlarge text-blue-600 hover:text-blue-800"
               data-testid="nav-store-link"
             >
               babies
