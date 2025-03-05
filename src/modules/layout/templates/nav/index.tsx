@@ -25,7 +25,7 @@ export default async function Nav() {
           </div>
 
           {/* Ellipse with Babies text */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-14 py-4 rounded-full border border-gray-300">
+          <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-12 py-1 rounded-full border border-gray-300">
             <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-blue-800 hover:text-blue-900"
@@ -38,10 +38,17 @@ export default async function Nav() {
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && (
+                <LocalizedClientLink
+                className="hover:text-ui-fg-base"
+                href="/search"
+                scroll={false}
+                data-testid="nav-search-link"
+              >
                 <button className="flex items-center gap-2 px-4 py-2 border rounded-full border-gray-300 hover:bg-gray-100">
                   <SearchIcon className='w-6 h-6' />
                   <span className="ml-2">Search</span>
                 </button>
+              </LocalizedClientLink>
               )}
               <LocalizedClientLink
                 className="hover:text-ui-fg-base"
@@ -68,7 +75,7 @@ export default async function Nav() {
         </nav>
         
         <div className="w-full bg-navbar-start py-2 shadow-md border-t border-gray-200">
-          <div className="content-container flex justify-center gap-12 text-gray-700">
+          <div className="content-container flex justify-center gap-12 text-ui-fg-base">
           {
           collections.map((collection)=>(
             <InteractiveLink key={collection.id} href={`/collections/${collection.handle}`}>{collection.title}</InteractiveLink>
