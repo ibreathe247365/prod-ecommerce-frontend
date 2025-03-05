@@ -71,7 +71,7 @@ export default async function Nav() {
           <div className="content-container flex justify-center gap-12 text-gray-700">
           {
           collections.map((collection)=>(
-            <InteractiveLink href={`/collections/${collection.handle}`}>{collection.title}</InteractiveLink>
+            <InteractiveLink key={collection.id} href={`/collections/${collection.handle}`}>{collection.title}</InteractiveLink>
           ))
         }
           </div>
