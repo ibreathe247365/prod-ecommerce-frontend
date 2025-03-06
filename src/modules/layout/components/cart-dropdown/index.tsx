@@ -78,25 +78,20 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full">
-          <LocalizedClientLink
-            className="hover:text-ui-fg-base"
-            href="/cart"
-            data-testid="nav-cart-link"
-          >
-            <BagIcon />
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
-              {totalItems}
-            </span>
-          </LocalizedClientLink>
-        </Popover.Button>
-        <Popover.Button className="relative h-full pb-40">
+      <Popover.Button className="h-full flex items-center relative space-x-1">
+        <LocalizedClientLink
+          className="hover:text-ui-fg-base flex items-center"
+          href="/cart"
+          data-testid="nav-cart-link"
+        >
+          <BagIcon />
+        </LocalizedClientLink>
         {totalItems > 0 && (
-          <span className="absolute top transform flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
             {totalItems}
           </span>
         )}
-        </Popover.Button>
+      </Popover.Button>
         <Transition
           show={cartDropdownOpen}
           as={Fragment}
