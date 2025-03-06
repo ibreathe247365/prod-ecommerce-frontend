@@ -86,11 +86,13 @@ const CartDropdown = ({
           >
             <BagIcon />
           </LocalizedClientLink>
-          {totalItems > 0 && (
-            <span className="absolute top-0 right-0 transform -translate-y-12 translate-x-1/2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
-              {totalItems}
-            </span>
-          )}
+        </Popover.Button>
+        <Popover.Button className="relative h-full pb-40">
+        {totalItems > 0 && (
+          <span className="absolute top transform flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+            {totalItems}
+          </span>
+        )}
         </Popover.Button>
         <Transition
           show={cartDropdownOpen}

@@ -28,7 +28,7 @@ export default async function Nav() {
           <div className="absolute left-1/2 transform -translate-x-1/2 bg-white px-8 py-3 rounded-[50%_/_50%]">
           <LocalizedClientLink
             href="/"
-            className="text-4xl font-bold text-transparent bg-clip-text bg-blue-300 font-[Fredoka] tracking-wider rotate-[-2deg]"
+            className="text-4xl font-bold text-transparent bg-clip-text bg-blue-500 font-fredoka tracking-wider rotate-[-2deg]"
             data-testid="nav-store-link"
           >
             babies
