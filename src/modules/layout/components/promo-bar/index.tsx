@@ -23,9 +23,9 @@ export default function PromoBanner() {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-navbar-end text-gray-800 text-sm p-3 text-center flex justify-between items-center">
+    <div className="bg-navbar-end text-gray-800 text-sm p-3 flex justify-between items-center">
       <span className="mx-auto font-semibold">
-        Use code <strong>PROMOTIONAL10</strong> for 10% discount!
+        Use code <strong>NEWCUSTOMER10</strong> for 10% discount!
       </span>
       <button onClick={dismissBanner} className="p-1 mr-2">
         <XMarkIcon className="h-5 w-5 text-gray-600 hover:text-gray-900" />
