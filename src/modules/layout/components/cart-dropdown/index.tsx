@@ -85,6 +85,9 @@ const CartDropdown = ({
             data-testid="nav-cart-link"
           >
             <BagIcon />
+            <span className="h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+              {totalItems}
+            </span>
           </LocalizedClientLink>
         </Popover.Button>
         <Popover.Button className="relative h-full pb-40">
