@@ -15,15 +15,15 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-    <div className="w-full max-w-6xl mx-auto mt-12 border-gray-300 rounded-2xl">
+    <div className="w-full max-w-6xl mx-auto mt-40 border-gray-300 rounded-2xl">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        className="rounded-2xl shadow-lg"
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        className="rounded-2xl"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
