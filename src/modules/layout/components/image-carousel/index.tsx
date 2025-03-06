@@ -15,7 +15,7 @@ const images = [
 
 export default function ImageCarousel() {
   return (
-    <div className="w-full max-w-6xl mx-auto mt-40 border-gray-300 rounded-2xl">
+    <div className="w-full max-w-6xl mx-auto mt-40 border-2 border-gray-300 rounded-2xl">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
