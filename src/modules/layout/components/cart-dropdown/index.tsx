@@ -85,7 +85,7 @@ const CartDropdown = ({
             data-testid="nav-cart-link"
           >
             <BagIcon />
-            <span className="h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
               {totalItems}
             </span>
           </LocalizedClientLink>
